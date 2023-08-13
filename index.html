@@ -8,16 +8,13 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <main id="black-container" class="w-screen min-h-screen flex flex-col justify-center items-center bg-black">
-      <section id="grey-card" class="flex flex-col justify-center items-center w-screen sm:py-4 sm:w-1/2 sm:rounded-3xl sm:bg-slate-500 sm:bg-opacity-5">
+    <main id="black-container" class="w-screen min-h-screen flex flex-col justify-center items-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900">
+      <section id="card" class="flex flex-col justify-center items-center w-screen sm:py-4 sm:w-1/2 sm:rounded-3xl sm:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900">
         <article id="all-content-box" class="flex flex-col justify-center items-center gap-4 sm:w-2/3">
-          <div id="button-box">
-            <button id="load-button" class="px-6 py-3 rounded-2xl font-medium text-white bg-blue-400 hover:bg-blue-600 transition-colors duration-700 active:bg-blue-800">ASTRONOMY PICTURE OF THE DAY</button>
-          </div>
-          <h1 id="today" class="font-semibold italic text-3xl"></h1>
-          <h2 id="dayOfThePictureTitle" class="font-black text-4xl text-center"></h2>
-          <img>
-          <p id="dayOfThePictureExplanation" class="text-xl text-justify"></p>
+          <input type="date" id="dateSelector" class="font-semibold italic text-3xl px-5 bg-inherit border-2 border-solid border-black rounded-lg">
+          <h2 id="dayOfThePictureTitle" class="font-black text-4xl text-center bg-inherit"></h2>
+          <img class="rounded-lg">
+          <p id="dayOfThePictureExplanation" class="text-xl text-justify italic"></p>
           <p id="dayOfThePictureAuthor" class="font-semibold"></p>
         </article>  
       </section>  
